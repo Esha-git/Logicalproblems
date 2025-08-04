@@ -12,7 +12,7 @@ public class OddDigitReverser {
                 number /= 10;
             }
 
-            System.out.println(reversedOdd); // Output: 97531
+            System.out.println(reversedOdd);
         }
     }
 

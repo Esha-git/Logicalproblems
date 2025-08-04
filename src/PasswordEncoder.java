@@ -21,7 +21,7 @@ public class PasswordEncoder {
         public static void main(String[] args) {
             String input = "Java1234";
             String output = encode(input);
-            System.out.println(output);  // Output: J@V@1*3*
+            System.out.println(output);
         }
     }
 

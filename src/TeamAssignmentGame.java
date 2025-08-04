@@ -13,7 +13,7 @@ public class TeamAssignmentGame {
             System.out.println("Team A: " + bestTeamA + " | Team B: " + bestTeamB);
         }
 
-        // Try all combinations of N/2 players
+
         private static void backtrack(int[] skills, int index, List<Integer> teamA, int size) {
             if (teamA.size() == size) {
                 List<Integer> teamB = new ArrayList<>();
@@ -37,12 +37,11 @@ public class TeamAssignmentGame {
 
             if (index >= skills.length) return;
 
-            // Include current player
             teamA.add(skills[index]);
             backtrack(skills, index + 1, teamA, size);
             teamA.remove(teamA.size() - 1);
 
-            // Exclude current player
+
             backtrack(skills, index + 1, teamA, size);
         }
 
